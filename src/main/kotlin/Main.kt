@@ -3,6 +3,7 @@ data class Philosopher(val name: String)
 enum class ForkState {
     FREE, TAKEN
 }
+
 data class Fork(val id: Int, var state: ForkState = ForkState.FREE)
 fun main() {
     val numPhilosophers = readLine()?.toIntOrNull() ?: 0
